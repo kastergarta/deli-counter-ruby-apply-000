@@ -11,13 +11,15 @@ def line(katz_deli)
   katz_deli.each_with_index do |i, idx| 
     new_array.push("#{idx + 1}. #{i}")
   end 
-  puts "The line is currently: #{new_array.join(" ")}"
+  puts "The line is currently: #{new_array.join(",")}"
 end
 end
 
-def take_a_number(katz_deli, name)
-  katz_deli << name
-  puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
+n = 1 
+def take_a_number(katz_deli)
+  
+  puts "You are number #{n} in line.
+  n += 1
 end
   
   
